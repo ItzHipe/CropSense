@@ -100,7 +100,7 @@ export default function About() {
           gap="32"
           hide="s"
         >
-          <TableOfContents structure={structure} about={about} />
+        
         </Column>
       )}
       <Flex fillWidth mobileDirection="column" horizontal="center">
