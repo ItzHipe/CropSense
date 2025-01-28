@@ -10,8 +10,7 @@ CropSense was built with [Once UI](https://once-ui.com) for [Next.js](https://ne
 
 **1. Clone the repository**
 ```
-git clone https://github.com/your-repo/cropsense.git
-```
+git clone https://github.com/ItzHipe/try-try-but-i-cry
 
 **2. Install dependencies**
 ```
@@ -23,19 +22,6 @@ npm install
 npm run dev
 ```
 
-**4. Edit config**
-```
-src/app/resources/config
-```
-
-**5. Edit content**
-```
-src/app/resources/content
-```
-
-**6. Add soil data**
-```
-Add new data files to src/app/data/soil
 ```
 
 # **Features**
@@ -44,16 +30,8 @@ Add new data files to src/app/data/soil
 - Accurate soil quality detection using AI
 - Recommendations for optimal crop growth
 
-## **User Interface**
-- Intuitive and responsive design
-- Easy navigation and data input
-
-## **Customization**
-- Flexible configuration options
-- Support for multiple languages
-
 ## **Data Visualization**
-- Detailed charts and graphs
+- Detailedgraphs
 - Historical data tracking
 
 # **Team Members**
