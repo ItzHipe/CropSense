@@ -104,7 +104,7 @@ const about = {
           // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/WhatsApp Image 2025-01-28 at 16.14.38_4bdd0a56.jpg",
-            alt: "Once UI Project",
+            alt: "Once UI Project ",
             width: 16,
             height: 9,
           },
