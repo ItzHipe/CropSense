@@ -184,7 +184,7 @@ CropSense collects real-time environmental data using sensors that measure weath
 
 const blog = {
   label: "Panel",
-  title: "Farm Analytics",
+  title: "",
   description: ``,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
