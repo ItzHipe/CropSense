@@ -9,39 +9,6 @@ import styles from "@/components/Header.module.scss";
 import { routes, display } from "@/app/resources";
 import { person, home, about, blog, work, gallery } from "@/app/resources/content";
 
-type TimeDisplayProps = {
-  timeZone: string;
-  locale?: string; // Optionally allow locale, defaulting to 'en-GB'
-};
-
-const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" }) => {
-  const [currentTime, setCurrentTime] = useState("");
-
-  useEffect(() => {
-    const updateTime = () => {
-      const now = new Date();
-      const options: Intl.DateTimeFormatOptions = {
-        timeZone,
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: false,
-      };
-      const timeString = new Intl.DateTimeFormat(locale, options).format(now);
-      setCurrentTime(timeString);
-    };
-
-    updateTime();
-    const intervalId = setInterval(updateTime, 1000);
-
-    return () => clearInterval(intervalId);
-  }, [timeZone, locale]);
-
-  return <>{currentTime}</>;
-};
-
-export default TimeDisplay;
-
 export const Header = () => {
   const pathname = usePathname() ?? "";
 
@@ -75,6 +42,23 @@ export const Header = () => {
                 <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
               <Line vert maxHeight="24" />
+              {routes["/work"] && (
+                <>
+                  <ToggleButton
+                    className="s-flex-hide"
+                    prefixIcon="grid"
+                    href="/panel"
+                    label={work.label}
+                    selected={pathname.startsWith("/panel")}
+                  />
+                  <ToggleButton
+                    className="s-flex-show"
+                    prefixIcon="grid"
+                    href="/panel"
+                    selected={pathname.startsWith("/panel")}
+                  />
+                </>
+              )}
               {routes["/about"] && (
                 <>
                   <ToggleButton
@@ -89,23 +73,6 @@ export const Header = () => {
                     prefixIcon="person"
                     href="/about"
                     selected={pathname === "/about"}
-                  />
-                </>
-              )}
-              {routes["/work"] && (
-                <>
-                  <ToggleButton
-                    className="s-flex-hide"
-                    prefixIcon="grid"
-                    href="/work"
-                    label={work.label}
-                    selected={pathname.startsWith("/work")}
-                  />
-                  <ToggleButton
-                    className="s-flex-show"
-                    prefixIcon="grid"
-                    href="/work"
-                    selected={pathname.startsWith("/work")}
                   />
                 </>
               )}
@@ -126,7 +93,7 @@ export const Header = () => {
                   />
                 </>
               )} */}
-              {routes["/gallery"] && (
+              {/* {routes["/gallery"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
@@ -142,7 +109,7 @@ export const Header = () => {
                     selected={pathname.startsWith("/gallery")}
                   />
                 </>
-              )}
+              )} */}
             </Flex>
           </Flex>
         </Flex>
@@ -154,7 +121,7 @@ export const Header = () => {
             textVariant="body-default-s"
             gap="20"
           >
-            <Flex hide="s">{display.time && <TimeDisplay timeZone={person.location} />}</Flex>
+            {/* Removed TimeDisplay component */}
           </Flex>
         </Flex>
       </Flex>
