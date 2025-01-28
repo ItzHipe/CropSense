@@ -126,7 +126,7 @@ export const Header = () => {
                   />
                 </>
               )} */}
-              {/* {routes["/gallery"] && (
+              {routes["/gallery"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
@@ -142,7 +142,7 @@ export const Header = () => {
                     selected={pathname.startsWith("/gallery")}
                   />
                 </>
-              )} */}
+              )}
             </Flex>
           </Flex>
         </Flex>
