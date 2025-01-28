@@ -58,7 +58,7 @@ const home = {
 
 const about = {
   label: "About",
-  title: "About me",
+  title: "about",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -183,9 +183,9 @@ CropSense collects real-time environmental data using sensors that measure weath
 };
 
 const blog = {
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
+  label: "Panel",
+  title: "Farm Analytics",
+  description: ``,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };

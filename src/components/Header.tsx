@@ -42,20 +42,37 @@ export const Header = () => {
                 <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
               <Line vert maxHeight="24" />
-              {routes["/work"] && (
+              {/* {routes["/work"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
                     prefixIcon="grid"
-                    href="/panel"
+                    href="/work"
                     label={work.label}
-                    selected={pathname.startsWith("/panel")}
+                    selected={pathname.startsWith("/work")}
                   />
                   <ToggleButton
                     className="s-flex-show"
                     prefixIcon="grid"
-                    href="/panel"
-                    selected={pathname.startsWith("/panel")}
+                    href="/work"
+                    selected={pathname.startsWith("/work")}
+                  />
+                </>
+              )} */}
+              {routes["/blog"] && (
+                <>
+                  <ToggleButton
+                    className="s-flex-hide"
+                    prefixIcon="grid"
+                    href="/blog"
+                    label={blog.label}
+                    selected={pathname.startsWith("/blog")}
+                  />
+                  <ToggleButton
+                    className="s-flex-show"
+                    prefixIcon="grid"
+                    href="/blog"
+                    selected={pathname.startsWith("/blog")}
                   />
                 </>
               )}
@@ -76,23 +93,6 @@ export const Header = () => {
                   />
                 </>
               )}
-              {/* {routes["/blog"] && (
-                <>
-                  <ToggleButton
-                    className="s-flex-hide"
-                    prefixIcon="book"
-                    href="/blog"
-                    label={blog.label}
-                    selected={pathname.startsWith("/blog")}
-                  />
-                  <ToggleButton
-                    className="s-flex-show"
-                    prefixIcon="book"
-                    href="/blog"
-                    selected={pathname.startsWith("/blog")}
-                  />
-                </>
-              )} */}
               {/* {routes["/gallery"] && (
                 <>
                   <ToggleButton
