@@ -1,36 +1,48 @@
 ---
 title: "Crop Sense"
-publishedAt: "2024-04-08"
+publishedAt: "2025-01-29"
 summary: "Developing a smart crop monitoring system that analyzes weather, soil moisture, air quality, and other environmental factors"
 images:
-  - "/images/projects/project-01/WhatsApp Image 2025-01-28 at 16.14.38_4bdd0a561.jpg"
-  - "/images/projects/project-01/WhatsApp Image 2025-01-28 at 16.14.38_fac271371.jpg"
+  - "/images/DraconiX.jpg"
+
  
 
 ---
 
-## Overview
+## Project Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+CropSense is an innovative agricultural software project designed to revolutionize farming practices, particularly in rural settings. The system leverages advanced technologies and real-time data to provide actionable insights, including crop recommendations, weather forecasts, and soil condition analysis. With a focus on empowering farmers, the platform aims to maximize crop yield, reduce resource wastage, and ensure sustainable farming practices.
 
-## Key Features
-
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
 
 ## Technologies Used
+1. Website Development
+- **Frontend**: Built using modern frameworks like React.js for a seamless user interface. Tailwind CSS ensures a responsive and visually appealing design, while libraries like Framer Motion enhance interactivity and animations.
+- **Backend**: Node.js and Express.js power the backend, enabling robust API integration and handling server-side logic effectively.
+- **Database**: MongoDB serves as the database, offering flexibility and scalability for storing large volumes of data, including sensor readings and user inputs.
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+2. Embedded Systems
+- **Arduino Uno**: Acts as the core microcontroller, interfacing with sensors to collect environmental data like temperature, soil moisture, and air quality.
+- Sensors:
+- **Soil Moisture Sensor**: Measures the water content in soil to guide irrigation.
+- **DHT11 Sensor**: Provides temperature and humidity readings.
+- **Rainfall Sensor**: Detects and records precipitation levels.
+- **Air Quality Sensor**: Monitors pollutants in the air to ensure a healthy crop environment.
 
-## Challenges and Learnings
+3. APIs and Integrations
+- **Weather API**: Provides real-time weather data to alert farmers about potential climatic changes.
+- **Machine Learning Models**: (Future update) Algorithms that analyze historical and real-time data for more accurate crop predictions.
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+## Additions and Future Vision
 
-## Outcome
+- **Mobile Accessibility**: Development of a mobile app for better reach and offline access.
+- **Blockchain for Transparency**: Integrating blockchain to ensure fair pricing and traceability in the supply chain.
+- **AI-Driven Pest Control**: Implementing image recognition systems to detect pests and diseases early.
+- **Community Platform**: A feature where farmers can share their experiences and seek advice from experts.
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+## Outcome of the Project
+
+- **Data-Driven Decisions**: Farmers can now make informed choices based on comprehensive insights.
+- **Improved Productivity**: Optimization of crop selection and resource allocation has led to increased yields.
+- **Cost-Effective Farming**: The system minimizes unnecessary expenses on water, fertilizers, and pesticides.
+- **Sustainability**: Encourages eco-friendly practices, reducing the environmental impact of farming.
+- **Empowered Communities**: By providing real-time data and recommendations, CropSense bridges the knowledge gap for rural farmers.

@@ -100,7 +100,7 @@ export default function About() {
           gap="32"
           hide="s"
         >
-        
+          <TableOfContents structure={structure} about={about} />
         </Column>
       )}
       <Flex fillWidth mobileDirection="column" horizontal="center">
@@ -138,7 +138,7 @@ export default function About() {
             vertical="center"
             marginBottom="32"
           >
-            {/* {about.calendar.display && (
+            {about.calendar.display && (
               <Flex
                 fitWidth
                 border="brand-alpha-medium"
@@ -153,16 +153,16 @@ export default function About() {
                 marginBottom="m"
                 vertical="center"
               >
-                <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Flex paddingX="8"></Flex>
+                {/* <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
+                <Flex paddingX="8">Schedule a call</Flex>
                 <IconButton
                   href={about.calendar.link}
-                  data-border=""
+                  data-border="rounded"
                   variant="secondary"
                   icon="chevronRight"
-                />
+                /> */}
               </Flex>
-            )} */}
+            )}
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}
             </Heading>

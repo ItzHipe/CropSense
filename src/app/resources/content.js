@@ -8,7 +8,7 @@ const person = {
   },
   role: "",
   avatar: "/images/DraconiX.jpg",
-  location: "", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  location: "Asia/India", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
@@ -58,7 +58,7 @@ const home = {
 
 const about = {
   label: "About",
-  title: "about",
+  title: "About Us",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -98,8 +98,8 @@ CropSense collects real-time environmental data using sensors that measure weath
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/WhatsApp Image 2025-01-28 at 16.14.38_4bdd0a56.jpg",
-            alt: "Once UI Project ",
+            src: "/images/DraconiX.jpg",
+            alt: "CropSense ",
             width: 16,
             height: 9,
           },
@@ -125,21 +125,27 @@ CropSense collects real-time environmental data using sensors that measure weath
       },
     ],
   },
+  
   studies: {
     display: true, // set to false to hide this section
     title: "Why to choose CropSense",
     institutions: [
       {
-        
-        description: <>Data-Driven Farming – Make informed agricultural decisions backed by real-time analysis.
-        Improved Yield & Productivity – Optimize crop selection for maximum growth potential.
-        Weather Adaptive Farming – Get alerts for sudden weather changes to protect crops.
-        Cost-Effective Solutions – Reduce unnecessary expenses on fertilizers and irrigation..</>,
+        name: "Data-Driven Farming",
+        description: <>With CropSense, you can make smarter farming decisions by relying on real-time data analysis tailored to your fields.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Weather Adaptive Farming",
+        description: <>Stay ahead of sudden weather changes with timely alerts, ensuring your crops are safe and your yields are protected.</>,
       },
+      {
+        name: "Improved Yield and Productivity",
+        description: <> Choose the right crops for your soil and conditions to maximize your harvest and boost productivity like never before. </>
+      },
+      {
+        name: "Cost-Effective Solutions",
+        description: <> Save money by cutting down on unnecessary spending for fertilizers and irrigation, all while improving efficiency. </>
+      }
     ],
   },
   technical: {
@@ -171,7 +177,7 @@ CropSense collects real-time environmental data using sensors that measure weath
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/Screenshot 2025-01-29 050552.jpg",
             alt: "Project image",
             width: 16,
             height: 9,

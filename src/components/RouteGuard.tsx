@@ -45,14 +45,14 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
       const routeEnabled = checkRouteEnabled();
       setIsRouteEnabled(routeEnabled);
 
-      if (protectedRoutes[pathname as keyof typeof protectedRoutes]) {
-        setIsPasswordRequired(true);
+      // if (protectedRoutes[pathname as keyof typeof protectedRoutes]) {
+      //   setIsPasswordRequired(true);
 
-        const response = await fetch("/api/check-auth");
-        if (response.ok) {
-          setIsAuthenticated(true);
-        }
-      }
+      //   const response = await fetch("/api/check-auth");
+      //   if (response.ok) {
+      //     setIsAuthenticated(true);
+      //   }
+      // }
 
       setLoading(false);
     };
