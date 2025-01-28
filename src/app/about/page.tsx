@@ -116,7 +116,7 @@ export default function About() {
           >
             <Avatar src={person.avatar} size="xl" />
             <Flex gap="8" vertical="center">
-              <Icon onBackground="accent-weak" name="globe" />
+              <Icon onBackground="accent-weak" name="" />
               {person.location}
             </Flex>
             {person.languages.length > 0 && (

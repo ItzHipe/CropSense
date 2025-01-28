@@ -6,10 +6,10 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "",
   avatar: "/images/DraconiX.jpg",
   location: "", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -40,7 +40,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "dhruv.choudhary589@gmail.com",
+    link: "https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRsphDvVVKpxvxqqdwzWBjStlTPghQCgvzvPPPRXjHJNgjfRqGCjNqCpFVMJfPSPsCRtNlB",
   },
 ];
 
