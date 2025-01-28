@@ -4,6 +4,7 @@ import { Posts } from "@/components/blog/Posts";
 import { baseURL } from "@/app/resources";
 import { blog, person, newsletter } from "@/app/resources/content";
 
+
 export async function generateMetadata() {
   const title = blog.title;
   const description = blog.description;
@@ -65,7 +66,7 @@ export default function Blog() {
         <Posts range={[1, 3]} thumbnail />
         <Posts range={[4]} columns="2" />
       </Column>
-      {newsletter.display && <Mailchimp newsletter={newsletter} />}
+      {/* {newsletter.display && <Mailchimp newsletter={newsletter} />} */}
     </Column>
   );
 }

@@ -193,7 +193,7 @@ const blog = {
 const work = {
   label: "Panel",
   title: "Farm Analytics",
-  description: `Design and dev projects by ${person.name}`,
+  description: `Design and dev projects by DraconiX`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
