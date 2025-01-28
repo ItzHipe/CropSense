@@ -14,11 +14,11 @@ const person = {
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}'s Updates</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      We occasionally write about the updates we are making on this
+      and other infos... if you want to get updated you can subscribe to this.
     </>
   ),
 };
@@ -76,29 +76,24 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        CropSense is a smart crop monitoring system that analyzes real-time weather, soil moisture, air quality, and other environmental factors to recommend the best crops for farming. By leveraging sensor data and intelligent analysis, it helps farmers make informed decisions to maximize yield and sustainability. CropSense simplifies agricultural planning, ensuring better productivity with data-driven insights.
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Working",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "How CropSense Works",
+        
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            How CropSense Works
+
+CropSense collects real-time environmental data using sensors that measure weather conditions, soil moisture, air quality, and rainfall. This data is processed through an intelligent analysis system that evaluates key agricultural parameters. Based on the analysis, CropSense provides farmers with accurate crop recommendations tailored to their specific location and conditions. The system ensures smarter farming decisions, optimizing yield and sustainability through data-driven insights.
           </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -111,18 +106,20 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Features",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Real-Time Monitoring – Continuously tracks weather, soil moisture, air quality, and other essential parameters.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Smart Crop Recommendations – Suggests the best crops based on environmental conditions and historical data.
           </>,
+          <>
+          User-Friendly Dashboard – Provides easy-to-understand data visualization for farmers and agronomists.
+          </>,
+          <>
+          Remote Accessibility – Access crop insights from anywhere via a web-based interface.
+          </>
         ],
         images: [],
       },
@@ -130,11 +127,14 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Why to choose CropSense",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        
+        description: <>Data-Driven Farming – Make informed agricultural decisions backed by real-time analysis.
+        Improved Yield & Productivity – Optimize crop selection for maximum growth potential.
+        Weather Adaptive Farming – Get alerts for sudden weather changes to protect crops.
+        Cost-Effective Solutions – Reduce unnecessary expenses on fertilizers and irrigation..</>,
       },
       {
         name: "Build the Future",
@@ -146,28 +146,28 @@ const about = {
     display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
-      {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
+      // {
+      //   title: "Figma",
+      //   description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+      //   // optional: leave the array empty if you don't want to display images
+      //   images: [
+      //     {
+      //       src: "/images/projects/project-01/cover-02.jpg",
+      //       alt: "Project image",
+      //       width: 16,
+      //       height: 9,
+      //     },
+      //     {
+      //       src: "/images/projects/project-01/cover-03.jpg",
+      //       alt: "Project image",
+      //       width: 16,
+      //       height: 9,
+      //     },
+      //   ],
+      // },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        description: <>Building websites like this </>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
