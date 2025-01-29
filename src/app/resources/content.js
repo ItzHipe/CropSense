@@ -205,8 +205,8 @@ const work = {
 };
 
 const gallery = {
-  label: "Ideas",
-  title: "My photo gallery",
+  label: "Panel",
+  title: "Farm Analytics",
   description: `A photo collection by ${person.name}`,
   // Images from https://pexels.com
   // images: [
