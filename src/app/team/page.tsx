@@ -10,22 +10,22 @@ const teamMembers: TeamMember[] = [
   {
     name: "Aman Shaikh",
     role: "Backend Developer",
-    img: "/images/DraconiX.jpg",
-  },
-  {
-    name: "Jay Patil",
-    role: "Frontend Developer",
-    img: "/images/DraconiX.jpg",
+    img: "/images/projects/project-01/aman2.jpg",
   },
   {
     name: "Aditya Jadhav",
     role: "Backend Developer",
-    img: "/images/DraconiX.jpg",
+    img: "/images/projects/project-01/adi2.jpg",
   },
   {
     name: "Dhruv Choudhary",
     role: "Frontend Developer",
-    img: "/images/DraconiX.jpg",
+    img: "/images/projects/project-01/me2.jpg",
+  },
+  {
+    name: "Jay Patil",
+    role: "Frontend Developer",
+    img: "/images/projects/project-01/jay.jpg",
   },
 ];
 
