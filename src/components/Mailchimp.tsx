@@ -137,7 +137,7 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
         id="mc-embedded-subscribe-form"
         name="mc-embedded-subscribe-form"
       >
-        <Flex id="mc_embed_signup_scroll" fillWidth maxWidth={24} gap="8">
+        {/* <Flex id="mc_embed_signup_scroll" fillWidth maxWidth={24} gap="8">
           <Input
             formNoValidate
             labelAsPlaceholder
@@ -186,7 +186,7 @@ export const Mailchimp = ({ newsletter }: { newsletter: NewsletterProps }) => {
               </Button>
             </Flex>
           </div>
-        </Flex>
+        </Flex> */}
       </form>
     </Column>
   );

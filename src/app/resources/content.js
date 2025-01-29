@@ -14,11 +14,10 @@ const person = {
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Updates</>,
+  title: <>Thank you!</>,
   description: (
     <>
-      We occasionally write about the updates we are making on this
-      and other infos... if you want to get updated you can subscribe to this.
+      We appreciate your interest in CropSense. Please explore our products/services and contact us if you have any questions.
     </>
   ),
 };
