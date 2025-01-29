@@ -98,7 +98,7 @@ CropSense collects real-time environmental data using sensors that measure weath
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/jpgimages/DraconiX.",
+            src: "/images/projects/project-01/J.jpeg",
             alt: "CropSense ",
             width: 16,
             height: 9,
