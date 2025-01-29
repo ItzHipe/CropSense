@@ -13,7 +13,7 @@ const person = {
 };
 
 const newsletter = {
-  display: false,
+  display: true,
   title: <>Subscribe to {person.firstName}'s Updates</>,
   description: (
     <>
@@ -98,7 +98,7 @@ CropSense collects real-time environmental data using sensors that measure weath
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/DraconiX.jpg",
+            src: "/jpgimages/DraconiX.",
             alt: "CropSense ",
             width: 16,
             height: 9,
@@ -177,7 +177,7 @@ CropSense collects real-time environmental data using sensors that measure weath
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/Screenshot 2025-01-29 050552.jpg",
+            src: "/images/projects/project-01/interface_enhanced.png",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -190,7 +190,7 @@ CropSense collects real-time environmental data using sensors that measure weath
 
 const blog = {
   label: "Panel",
-  title: "",
+  title: "Farm Analytics",
   description: ``,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -199,7 +199,7 @@ const blog = {
 const work = {
   label: "Work",
   title: "Farm Analytics",
-  description: `Design and dev projects by DraconiX`,
+  description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
