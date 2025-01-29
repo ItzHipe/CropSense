@@ -59,9 +59,9 @@ export default function Blog() {
           }),
         }}
       />
-      <Heading marginBottom="l" variant="display-strong-s" align="center"> 
+      {/* <Heading marginBottom="l" variant="display-strong-s" align="center"> 
         {blog.title}
-      </Heading>
+      </Heading> */}
       {/* <Column fillWidth flex={1}>
         <Posts range={[1, 3]} thumbnail />
         <Posts range={[4]} columns="2" />
