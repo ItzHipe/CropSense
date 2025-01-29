@@ -1,34 +1,75 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
 
-type TeamMember = {
+interface TeamMember {
   name: string;
   role: string;
   img: string;
-};
+}
 
 const teamMembers: TeamMember[] = [
-  { name: "Aman Shaikh", role: "Backend Developer", img: "/images/DraconiX.jpg" },
-  { name: "Jay Patil", role: "Frontend Developer", img: "/images/DraconiX.jpg" },
-  { name: "Aditya Jadhav", role: "Backend Developer", img: "/images/DraconiX.jpg" },
-  { name: "Dhruv Choudhary", role: "Frontend Developer", img: "/images/DraconiX.jpg" }
+  {
+    name: "Aman Shaikh",
+    role: "Backend Developer",
+    img: "/images/DraconiX.jpg",
+  },
+  {
+    name: "Jay Patil",
+    role: "Frontend Developer",
+    img: "/images/DraconiX.jpg",
+  },
+  {
+    name: "Aditya Jadhav",
+    role: "Backend Developer",
+    img: "/images/DraconiX.jpg",
+  },
+  {
+    name: "Dhruv Choudhary",
+    role: "Frontend Developer",
+    img: "/images/DraconiX.jpg",
+  },
 ];
 
-const MeetTheTeam: React.FC = () => {
+const TeamPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black to-green-900 text-white flex flex-col items-center justify-center p-8">
-      <h1 className="text-4xl font-bold mb-4">Meet the Team</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        padding: "20px",
+      }}
+    >
+      <h1 style={{ fontSize: "2.5rem", marginBottom: "20px" }}>Our Team</h1>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          gap: "40px",
+        }}
+      >
         {teamMembers.map((member, index) => (
           <div
             key={index}
-            className={`p-6 rounded-xl shadow-lg text-center transform transition-transform ${
-              index === 1 ? 'bg-green-700 scale-105' : 'bg-gray-900'
-            }`}
+            style={{
+              textAlign: "center",
+              maxWidth: "200px",
+              transition: "transform 0.3s, box-shadow 0.3s",
+            }}
           >
-            <Image src={member.img} alt={member.name} width={128} height={128} className="w-32 h-32 mx-auto rounded-full mb-4" />
-            <h2 className="text-xl font-semibold">{member.name}</h2>
-            <p className="text-gray-400">{member.role}</p>
+            <img
+              src={member.img}
+              alt={member.name}
+              style={{
+                width: "100%",
+                borderRadius: "50%",
+                boxShadow: "0 4px 20px rgba(0, 255, 0, 0.5)",
+              }}
+            />
+            <h2 style={{ fontSize: "1.5rem", margin: "10px 0" }}>
+              {member.name}
+            </h2>
+            <p style={{ fontSize: "1rem", color: "gray" }}>{member.role}</p>
           </div>
         ))}
       </div>
@@ -36,4 +77,4 @@ const MeetTheTeam: React.FC = () => {
   );
 };
 
-export default MeetTheTeam;
+export default TeamPage;
