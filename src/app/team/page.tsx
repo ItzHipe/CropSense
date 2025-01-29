@@ -8,10 +8,10 @@ type TeamMember = {
 };
 
 const teamMembers: TeamMember[] = [
-  { name: "Dhruv Choudhary", role: "Lead Developer", img: "/images/DraconiX.jpg" },
-  { name: "Aman Shaikh", role: "UI/UX Designer", img: "/images/DraconiX.jpg" },
-  { name: "Aditya Jadhav", role: "Backend Engineer", img: "/images/DraconiX.jpg" },
-  { name: "Jay Patil", role: "Frontend Developer", img: "/images/DraconiX.jpg" }
+  { name: "Aman Shaikh", role: "Backend Developer", img: "/images/DraconiX.jpg" },
+  { name: "Jay Patil", role: "Frontend Developer", img: "/images/DraconiX.jpg" },
+  { name: "Aditya Jadhav", role: "Backend Developer", img: "/images/DraconiX.jpg" },
+  { name: "Dhruv Choudhary", role: "Frontend Developer", img: "/images/DraconiX.jpg" }
 ];
 
 const MeetTheTeam: React.FC = () => {
