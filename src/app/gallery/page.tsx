@@ -1,11 +1,11 @@
 import { Flex } from "@/once-ui/components";
-import MasonryGrid from "@/components/gallery/MasonryGrid";
 import { baseURL } from "@/app/resources";
 import { gallery, person } from "@/app/resources/content";
 
 export async function generateMetadata() {
-  const title = gallery.title;
-  const description = gallery.description;
+  const title = "Ideas for Future Development";
+  const description =
+    "Explore a collection of ideas and inspirations for future development, including innovative concepts and potential improvements.";
   const ogImage = `https://${baseURL}/og?title=${encodeURIComponent(title)}`;
 
   return {
@@ -15,7 +15,7 @@ export async function generateMetadata() {
       title,
       description,
       type: "website",
-      url: `https://${baseURL}/gallery`,
+      url: `https://${baseURL}/ideas`,
       images: [
         {
           url: ogImage,
@@ -32,24 +32,41 @@ export async function generateMetadata() {
   };
 }
 
-export default function Gallery() {
+export default function IdeasForDevelopment() {
+  const ideas = [
+    "Implement a real-time data synchronization feature for seamless collaboration.",
+    "Introduce advanced AI-based personalization for users.",
+    "Develop a mobile app version to expand accessibility.",
+    "Optimize backend systems for enhanced scalability and performance.",
+    "Incorporate gamification elements to increase user engagement.",
+    "Focus on improving accessibility features for inclusivity.",
+    "Add multilingual support to reach a global audience.",
+    "Develop an API for third-party integrations and extensions.",
+  ];
+
   return (
-    <Flex fillWidth>
+    <Flex fillWidth className="flex flex-col p-8 space-y-6 bg-gray-100 text-black">
+      <h1 className="text-4xl font-extrabold text-center mb-6">
+        Ideas for Future Development
+      </h1>
+      <div className="space-y-4">
+        {ideas.map((idea, index) => (
+          <p key={index} className="text-lg leading-relaxed">
+            {index + 1}. {idea}
+          </p>
+        ))}
+      </div>
       <script
         type="application/ld+json"
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "ImageGallery",
-            name: gallery.title,
-            description: gallery.description,
-            url: `https://${baseURL}/gallery`,
-            image: gallery.images.map((image) => ({
-              "@type": "ImageObject",
-              url: `${baseURL}${image.src}`,
-              description: image.alt,
-            })),
+            "@type": "Article",
+            name: "Ideas for Future Development",
+            description:
+              "A curated list of innovative concepts and ideas for enhancing future development.",
+            url: `https://${baseURL}/ideas`,
             author: {
               "@type": "Person",
               name: person.name,
@@ -61,7 +78,6 @@ export default function Gallery() {
           }),
         }}
       />
-      <MasonryGrid />
     </Flex>
   );
 }
