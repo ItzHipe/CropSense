@@ -42,40 +42,7 @@ export const Header = () => {
                 <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
               )}
               <Line vert maxHeight="24" />
-              {/* {routes["/work"] && (
-                <>
-                  <ToggleButton
-                    className="s-flex-hide"
-                    prefixIcon="grid"
-                    href="/work"
-                    label={work.label}
-                    selected={pathname.startsWith("/work")}
-                  />
-                  <ToggleButton
-                    className="s-flex-show"
-                    prefixIcon="grid"
-                    href="/work"
-                    selected={pathname.startsWith("/work")}
-                  />
-                </>
-              )} */}
-              {/* {routes["/blog"] && (
-                <>
-                  <ToggleButton
-                    className="s-flex-hide"
-                    prefixIcon="grid"
-                    href="/blog"
-                    label={blog.label}
-                    selected={pathname.startsWith("/blog")}
-                  />
-                  <ToggleButton
-                    className="s-flex-show"
-                    prefixIcon="grid"
-                    href="/blog"
-                    selected={pathname.startsWith("/blog")}
-                  />
-                </>
-              )} */}
+
               {routes["/gallery"] && (
                 <>
                   <ToggleButton
@@ -93,6 +60,7 @@ export const Header = () => {
                   />
                 </>
               )}
+
               {routes["/about"] && (
                 <>
                   <ToggleButton
@@ -107,6 +75,24 @@ export const Header = () => {
                     prefixIcon="person"
                     href="/about"
                     selected={pathname === "/about"}
+                  />
+                </>
+              )}
+
+              {routes["/team"] && (
+                <>
+                  <ToggleButton
+                    className="s-flex-hide"
+                    prefixIcon=" "
+                    href="/team"
+                    label="Team"
+                    selected={pathname === "/team"}
+                  />
+                  <ToggleButton
+                    className="s-flex-show"
+                    prefixIcon="people"
+                    href="/team"
+                    selected={pathname === "/team"}
                   />
                 </>
               )}

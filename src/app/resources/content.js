@@ -280,6 +280,10 @@ const gallery = {
   //     orientation: "horizontal",
   //   },
   // ],
+  };
+ const team = {
+  label: "Team",
+  description: "Meet our amazing team",
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
