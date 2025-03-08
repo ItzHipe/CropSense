@@ -2,25 +2,6 @@
 
 CropSense is an innovative project designed to detect soil quality and provide recommendations on which crops to grow and when. Utilizing advanced AI algorithms, CropSense aims to optimize agricultural productivity and sustainability.
 
-# **Team Members**
-
-Connect with us on LinkedIn.
-
-Aman Shaikh: [LinkedIn](https://www.linkedin.com/in/aman-shaikh33/)  
-Jay Patil: [LinkedIn](https://www.linkedin.com/in/jay-patil-562046285/)  
-Dhruv Choudhary: [LinkedIn](https://www.linkedin.com/in/dhruv-choudhary-ab0421291/)                     
-Aditya Jadhav: [LinkedIn](https://www.linkedin.com/in/aditya-jadhav-83574a347/)
-
-
-# Other Repos of the same project that work hand-in-hand:
-
-Frontend UI - https://github.com/m4xy07/team56-frontend
-Backend - Arduino - https://github.com/m4xy07/team56-backend
-Server - Middleware - https://github.com/m4xy07/team56-server
-Panel - WebView Dashboard - https://github.com/m4xy07/team56-cropsense-panel
-
-**Project Video** - https://youtu.be/zj87L2JrtaQ
-
 ## Aim and Objective of the Arduino Based Crop and Weather Suitability Station
 
 This project aims to create a comprehensive weather station that monitors various environmental parameters and analyzes their suitability for crop growth. 
@@ -39,8 +20,6 @@ Here's a breakdown of the objectives:
 * **Web Connectivity and Data Transmission:**
     * Connects to a Wi-Fi network.
     * Transmits the collected weather data along with crop suitability information to a web server at regular intervals.
-
-The Data transmision and processing (storage of data recieved in a MongoDB on a server) is done via the [Arduino Server Manager](https://github.com/m4xy07/arduino-server-manager)
 
 ## Working of the Arduino Code
 
@@ -71,14 +50,13 @@ The code can be segmented into several key functionalities:
 
 This continuous cycle of data acquisition, analysis, display, storage, and transmission allows the Arduino station to function as a comprehensive weather monitoring and crop suitability assessment tool.
 
-
-
 # **Getting Started**
 
 CropSense was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+
 **1. Clone the repository**
 ```bash
-git clone https://github.com/m4xy07/team56-frontend
+git clone https://github.com/ItzHipe/CropSense
 ```
 
 **2. Install dependencies**
@@ -86,7 +64,7 @@ git clone https://github.com/m4xy07/team56-frontend
 npm install
 ```
 
-**3. Run dev server**
+**3. Run the development server**
 ```bash
 npm run dev
 ```
@@ -100,7 +78,3 @@ npm run dev
 ## **Data Visualization**
 - Detailed graphs
 - Historical data tracking
-
-
-
-
